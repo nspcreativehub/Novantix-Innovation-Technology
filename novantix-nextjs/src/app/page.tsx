@@ -90,9 +90,7 @@ export default function Home() {
               <a href="#placements" className="text-sm text-gray-300 hover:text-white transition-colors">Placements</a>
               <a href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">Contact</a>
               <a
-                href="https://student-portal-sooty-five.vercel.app/login"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/login"
                 className="px-4 py-2 border border-purple-500 text-purple-400 rounded-full text-sm font-medium hover:bg-purple-500/10 transition-colors"
               >
                 Student Login
