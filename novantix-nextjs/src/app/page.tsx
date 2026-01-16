@@ -89,6 +89,14 @@ export default function Home() {
               <a href="#reviews" className="text-sm text-gray-300 hover:text-white transition-colors">Reviews</a>
               <a href="#placements" className="text-sm text-gray-300 hover:text-white transition-colors">Placements</a>
               <a href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">Contact</a>
+              <a
+                href="https://student-portal-sooty-five.vercel.app/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 border border-purple-500 text-purple-400 rounded-full text-sm font-medium hover:bg-purple-500/10 transition-colors"
+              >
+                Student Login
+              </a>
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
