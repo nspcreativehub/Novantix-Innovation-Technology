@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
-import ChatWidget from "@/components/ChatWidget";
+// ChatWidget temporarily disabled - uncomment when ready to use
+// import ChatWidget from "@/components/ChatWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,7 +34,8 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
-        <ChatWidget />
+        {/* ChatWidget temporarily disabled - uncomment when ready to use */}
+        {/* <ChatWidget /> */}
       </body>
     </html>
   );
