@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Visitor {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  sessions  Session[]
+  events    Event[]
+  pageViews PageView[]
+}
+
+model Session {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  visitorId String   @db.ObjectId
+  startTime DateTime @default(now())
+  endTime   DateTime?
+  duration  Int?     @default(0) // in seconds
+  visitor   Visitor  @relation(fields: [visitorId], references: [id])
+  pageViews PageView[]
+  events    Event[]
+}
+
+model PageView {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  sessionId String   @db.ObjectId
+  visitorId String   @db.ObjectId // De-normalized for easier queries
+  url       String
+  referrer  String?
+  timestamp DateTime @default(now())
+  duration  Int?     @default(0)
+  session   Session  @relation(fields: [sessionId], references: [id])
+  visitor   Visitor  @relation(fields: [visitorId], references: [id])
+}
+
+model Event {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  sessionId String   @db.ObjectId
+  visitorId String   @db.ObjectId
+  type      String   // 'heartbeat', 'click', 'custom'
+  url       String?  // URL where event happened
+  payload   String?  // JSON string
+  timestamp DateTime @default(now())
+  visitor   Visitor  @relation(fields: [visitorId], references: [id])
+  session   Session  @relation(fields: [sessionId], references: [id])
+}

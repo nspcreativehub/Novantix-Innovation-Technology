@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Novantix Innovation Technology - Empowering students with real-world skills, industry-grade projects, and professional certification. Learn, Build, Get Certified, and Get Job-Ready.">
+    <meta name="keywords"
+        content="EdTech, IT training, Java, Spring Boot, DSA, Full Stack, Projects, Certification, Job Ready">
+    <title>Novantix Innovation Technology - Industry-Ready Skills & Real-World Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Self-Hosted Analytics Tracking -->
+    <script src="https://analytics-server-lnqx8your-sais-projects-633c31aa.vercel.app/tracking.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-section">
+                    <h1 class="company-name">Novantix Innovation Technology</h1>
+                    <p class="tagline">Industry-Ready Skills • Real-World Projects<br>Professional Certification</p>
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                    <a href="#placements" class="nav-link">Placements</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn-enroll" id="enrollBtn">Enroll Now</button>
+                    <a href="login.html" class="btn-login">LOGIN</a>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <span id="typingText">Empowering Students with Real-World Skills</span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-subtitle">Learn. Build. Get Certified. Get Job-Ready with Novantix Innovation Technology.
+                </p>
+                <div class="hero-cta">
+                    <a href="#courses" class="btn btn-primary pulse-btn">Get Started</a>
+                    <a href="#courses" class="btn btn-secondary">Explore Courses</a>
+                    <a href="login.html" class="btn btn-outline">Login to Student Portal</a>
+                </div>
+
+                <!-- Quick Stats Animation -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-value">6+</div>
+                        <div class="stat-label">Courses</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">👨‍🎓</div>
+                        <div class="stat-value">40+</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Practical</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Novantix Innovation Technology</h2>
+            <div class="about-content">
+                <p>Novantix Innovation Technology is an innovation-driven EdTech organization focused on empowering
+                    students with practical, industry-relevant skills. We specialize in hands-on mini and major
+                    projects, professional certification, and job-oriented technical training.</p>
+                <p>Our mission is to bridge the gap between academic learning and real-world industry requirements
+                    through project-based education and modern technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Courses We Offer</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">🎓</div>
+                    <h3 class="course-title">Mini & Major Academic Projects</h3>
+                    <p class="course-description">College-approved projects with documentation and presentation support.
+                    </p>
+                    <div class="course-meta">
+                        <span class="duration">Flexible</span>
+                        <span class="level beginner">All Levels</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">☕</div>
+                    <h3 class="course-title">Java Programming</h3>
+                    <p class="course-description">Master core Java concepts and object-oriented programming
+                        fundamentals.</p>
+                    <div class="course-meta">
+                        <span class="duration">8 Weeks</span>
+                        <span class="level beginner">Beginner</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🔢</div>
+                    <h3 class="course-title">Data Structures & Algorithms</h3>
+                    <p class="course-description">Learn essential DSA concepts for technical interviews and
+                        problem-solving.</p>
+                    <div class="course-meta">
+                        <span class="duration">10 Weeks</span>
+                        <span class="level intermediate">Intermediate</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🗄️</div>
+                    <h3 class="course-title">MySQL & Database Management</h3>
+                    <p class="course-description">Comprehensive database design, queries, and optimization techniques.
+                    </p>
+                    <div class="course-meta">
+                        <span class="duration">6 Weeks</span>
+                        <span class="level beginner">Beginner</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🚀</div>
+                    <h3 class="course-title">Spring Boot</h3>
+                    <p class="course-description">Build robust backend applications with Spring Boot and REST APIs.</p>
+                    <div class="course-meta">
+                        <span class="duration">12 Weeks</span>
+                        <span class="level advanced">Advanced</span>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🔄</div>
+                    <h3 class="course-title">n8n Automation</h3>
+                    <p class="course-description">Master workflow automation and orchestration with n8n platform.</p>
+                    <div class="course-meta">
+                        <span class="duration">4 Weeks</span>
+                        <span class="level intermediate">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mini & Major Projects</h2>
+            <div class="projects-content">
+                <div class="projects-grid">
+                    <div class="project-feature">
+                        <div class="feature-icon">📝</div>
+                        <h3>Engineering Mini Projects</h3>
+                        <p>Focused projects for semester requirements</p>
+                    </div>
+                    <div class="project-feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Final Year Major Projects</h3>
+                        <p>Comprehensive capstone projects</p>
+                    </div>
+                    <div class="project-feature">
+                        <div class="feature-icon">🏢</div>
+                        <h3>Real-time Industry Use Cases</h3>
+                        <p>Practical, market-relevant applications</p>
+                    </div>
+                    <div class="project-feature">
+                        <div class="feature-icon">📚</div>
+                        <h3>Project Documentation</h3>
+                        <p>Complete documentation support</p>
+                    </div>
+                    <div class="project-feature">
+                        <div class="feature-icon">🎤</div>
+                        <h3>Viva & Interview Guidance</h3>
+                        <p>Preparation for project defense</p>
+                    </div>
+                    <div class="project-feature">
+                        <div class="feature-icon">🌐</div>
+                        <h3>GitHub + Deployment Support</h3>
+                        <p>Version control and live deployment</p>
+                    </div>
+                </div>
+                <div class="highlight-badge">
+                    <span>100% Practical</span> • <span>College-Approved</span> • <span>Industry-Relevant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="certification" id="certification">
+        <div class="container">
+            <h2 class="section-title">Professional Certification</h2>
+            <div class="certification-content">
+                <p class="certification-intro">Students receive verified certificates from Novantix Innovation
+                    Technology upon successful completion of courses and projects.</p>
+                <div class="certification-features">
+                    <div class="cert-feature">
+                        <div class="cert-icon">🆔</div>
+                        <h4>Unique Certificate ID</h4>
+                    </div>
+                    <div class="cert-feature">
+                        <div class="cert-icon">📱</div>
+                        <h4>QR Code Verification</h4>
+                    </div>
+                    <div class="cert-feature">
+                        <div class="cert-icon">📋</div>
+                        <h4>Course / Project Details</h4>
+                    </div>
+                    <div class="cert-feature">
+                        <div class="cert-icon">✍️</div>
+                        <h4>Authorized Signatory</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placements Section -->
+    <section class="placements" id="placements">
+        <div class="container">
+            <h2 class="section-title">Placements & Career Support</h2>
+            <div class="placements-grid">
+                <div class="placement-card">
+                    <div class="placement-icon">📄</div>
+                    <h3>Resume Building</h3>
+                    <p>ATS-friendly resume creation</p>
+                </div>
+                <div class="placement-card">
+                    <div class="placement-icon">💼</div>
+                    <h3>Portfolio Development</h3>
+                    <p>Showcase your best work professionally</p>
+                </div>
+                <div class="placement-card">
+                    <div class="placement-icon">🎭</div>
+                    <h3>Mock Interviews</h3>
+                    <p>Practice with industry experts</p>
+                </div>
+                <div class="placement-card">
+                    <div class="placement-icon">🤝</div>
+                    <h3>Internship Assistance</h3>
+                    <p>Connect with top companies</p>
+                </div>
+                <div class="placement-card">
+                    <div class="placement-icon">🎯</div>
+                    <h3>Job Opportunity Guidance</h3>
+                    <p>Career path consultation</p>
+                </div>
+                <div class="placement-card">
+                    <div class="placement-icon">👨‍🏫</div>
+                    <h3>Career Mentorship</h3>
+                    <p>One-on-one mentorship sessions</p>
+                </div>
+            </div>
+            <div class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Students Trained</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews / Testimonials Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-avatar">👨‍💻</div>
+                    <h4 class="reviewer-name">Rajesh Kumar</h4>
+                    <p class="reviewer-college">Anna University</p>
+                    <p class="reviewer-course">Full-Stack Development</p>
+                    <p class="review-text">"The hands-on project approach helped me land my first job. The mentors are
+                        amazing and always available to help!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👩‍💻</div>
+                    <h4 class="reviewer-name">Priya Sharma</h4>
+                    <p class="reviewer-college">VIT Chennai</p>
+                    <p class="reviewer-course">Spring Boot Training</p>
+                    <p class="review-text">"Best decision I made! The curriculum is industry-focused and the projects
+                        are real-world scenarios. Highly recommended!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👨‍🎓</div>
+                    <h4 class="reviewer-name">Arun Prakash</h4>
+                    <p class="reviewer-college">SRM Institute</p>
+                    <p class="reviewer-course">Major Project Support</p>
+                    <p class="review-text">"Got excellent support for my final year project. Documentation, deployment,
+                        everything was covered. Scored 95+ marks!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👩‍🎓</div>
+                    <h4 class="reviewer-name">Divya Menon</h4>
+                    <p class="reviewer-college">PSG College</p>
+                    <p class="reviewer-course">DSA & Interview Prep</p>
+                    <p class="review-text">"The DSA course and mock interviews helped me crack product-based company
+                        interviews. Thank you Novantix!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👨‍💼</div>
+                    <h4 class="reviewer-name">Karthik Reddy</h4>
+                    <p class="reviewer-college">NIT Trichy</p>
+                    <p class="reviewer-course">Java & Spring Boot</p>
+                    <p class="review-text">"Industry-ready training with practical examples. Landed a backend developer
+                        role in 3 months. Awesome experience!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-avatar">👩‍💼</div>
+                    <h4 class="reviewer-name">Sneha Patel</h4>
+                    <p class="reviewer-college">Amrita University</p>
+                    <p class="reviewer-course">Full-Stack Project</p>
+                    <p class="review-text">"Complete project guidance from start to finish. The team is professional and
+                        supportive. Worth every penny!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Start Your Learning Journey with Novantix Innovation Technology</h2>
+            <div class="cta-buttons">
+                <a href="#courses" class="btn btn-primary">Enroll Now</a>
+                <a href="login.html" class="btn btn-outline-light">Login to Student Portal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Novantix Innovation Technology</h3>
+                    <p class="footer-description">Empowering students with practical, industry-relevant skills through
+                        project-based education and modern technologies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p>📧 Email: info@novantix.tech</p>
+                    <p>📞 Phone: +91 XXX XXX XXXX</p>
+                    <p>📍 Address: Chennai, Tamil Nadu, India</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Novantix Innovation Technology. All Rights Reserved.</p>
+                <p class="developer-credit">Developed by <a href="https://nspcreativehub.info" target="_blank">NSP
+                        Creative Hub</a> | <a href="mailto:nspcreativehub@gmail.com">nspcreativehub@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enrollment Modal -->
+    <div class="enroll-modal" id="enrollModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">×</span>
+            <h2 class="modal-title">Enroll in a Course</h2>
+            <p class="modal-subtitle">Fill in your details and we'll get back to you soon!</p>
+
+            <form id="enrollmentForm" class="enrollment-form">
+                <div class="form-group">
+                    <label for="studentName">Full Name *</label>
+                    <input type="text" id="studentName" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="studentEmail">Email Address *</label>
+                    <input type="email" id="studentEmail" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="studentMobile">Mobile Number *</label>
+                    <input type="tel" id="studentMobile" name="mobile" required placeholder="+91 XXXXX XXXXX"
+                        pattern="[+0-9 ]{10,15}">
+                </div>
+
+                <div class="form-group">
+                    <label for="studentCourse">Select Course *</label>
+                    <select id="studentCourse" name="course" required>
+                        <option value="">-- Choose a course --</option>
+                        <option value="Mini & Major Academic Projects">Mini & Major Academic Projects</option>
+                        <option value="Java Programming">Java Programming</option>
+                        <option value="Data Structures & Algorithms (DSA)">Data Structures & Algorithms (DSA)</option>
+                        <option value="MySQL & Database Management">MySQL & Database Management</option>
+                        <option value="Spring Boot">Spring Boot</option>
+                        <option value="n8n Automation">n8n Automation</option>
+                    </select>
+                </div>
+
+
+                <div class="form-message" id="formMessage"></div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span class="btn-text">Submit Enrollment</span>
+                        <span class="btn-loader" style="display: none;">⏳ Submitting...</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
