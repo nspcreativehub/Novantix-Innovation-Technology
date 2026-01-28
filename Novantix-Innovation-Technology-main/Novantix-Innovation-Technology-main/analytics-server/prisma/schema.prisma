@@ -7,20 +7,22 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Visitor uses client-generated UUID as the ID (not auto-generated ObjectId)
 model Visitor {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  id        String   @id @map("_id")
   createdAt DateTime @default(now())
   sessions  Session[]
   events    Event[]
   pageViews PageView[]
 }
 
+// Session uses client-generated UUID as the ID
 model Session {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  visitorId String   @db.ObjectId
+  id        String   @id @map("_id")
+  visitorId String
   startTime DateTime @default(now())
   endTime   DateTime?
-  duration  Int?     @default(0) // in seconds
+  duration  Int?     @default(0)
   visitor   Visitor  @relation(fields: [visitorId], references: [id])
   pageViews PageView[]
   events    Event[]
@@ -28,8 +30,8 @@ model Session {
 
 model PageView {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  sessionId String   @db.ObjectId
-  visitorId String   @db.ObjectId // De-normalized for easier queries
+  sessionId String
+  visitorId String
   url       String
   referrer  String?
   timestamp DateTime @default(now())
@@ -40,11 +42,11 @@ model PageView {
 
 model Event {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  sessionId String   @db.ObjectId
-  visitorId String   @db.ObjectId
-  type      String   // 'heartbeat', 'click', 'custom'
-  url       String?  // URL where event happened
-  payload   String?  // JSON string
+  sessionId String
+  visitorId String
+  type      String
+  url       String?
+  payload   String?
   timestamp DateTime @default(now())
   visitor   Visitor  @relation(fields: [visitorId], references: [id])
   session   Session  @relation(fields: [sessionId], references: [id])

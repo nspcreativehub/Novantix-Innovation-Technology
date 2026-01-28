@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Test Page</title>
+</head>
+<body>
+    <h1>Analytics Test Page</h1>
+    <p>Open console to see tracking logs.</p>
+    <button onclick="history.pushState({}, '', '/page2')">Go to Page 2 (SPA)</button>
+    <button onclick="history.back()">Go Back</button>
+    
+    <script src="tracking.js"></script>
+</body>
+</html>
